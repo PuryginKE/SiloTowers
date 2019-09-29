@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
   }
   
   percent(value, minvalue, maxvalue){
-      return (Math.floor((value-minvalue) / ((maxvalue-minvalue) / 100)))
+      return (Math.floor((value - minvalue) / ((maxvalue - minvalue) / 100)))
   }
 
 }
