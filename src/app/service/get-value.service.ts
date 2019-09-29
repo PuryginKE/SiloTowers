@@ -11,7 +11,6 @@ export class GetValueService {
 
   public min;
   public max;
-  public readonly Math = Math;
 
   constructor(
     public http: HttpClient
@@ -21,7 +20,6 @@ export class GetValueService {
   public getValueApi(): Observable<Indicator[]>{
     return this.http.get<Indicator[]>('https://api.exmo.com/v1/trades/?pair=BTC_USD').pipe(
       map(data => {
-     //     const _data= this.mapData(()=>{ this.minmaxValue(data) } ).slice(0,5);
           const _data= this.mapData(data);
           this.min = _data[0].value;
           this.max = this.min;
