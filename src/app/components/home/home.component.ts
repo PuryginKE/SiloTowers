@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
     debugger
   }
   
-  percent(value, minvalue, maxvalue){
+  public percent(value, minvalue, maxvalue){
       return (Math.floor((value - minvalue) / ((maxvalue - minvalue) / 100)))
   }
 

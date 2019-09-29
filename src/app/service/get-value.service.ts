@@ -24,11 +24,11 @@ export class GetValueService {
           this.min = _data[0].value;
           this.max = this.min;
           _data.forEach(item => {
-            if(item.value> this.max){
+            if(item.value > this.max){
                this.max = item.value;
             }
          
-            if(item.value<this.min){
+            if(item.value < this.min){
                this.min = item.value;
             }
           });
@@ -41,7 +41,7 @@ export class GetValueService {
   mapData(data){
     return data.BTC_USD.map((item) => {
       return {
-        id: item.trade_id-110000000,
+        id: item.trade_id - 110000000,
         value: Math.ceil(item.price),
         title: new Date(item.date*1000).toLocaleTimeString(),
       }
