@@ -1,0 +1,23 @@
+<div class="flex-container">
+  <div *ngFor="let obj of objs" class="item">
+    <div class="title">
+      Уровень карналита в силосной башне №{{ obj.id }}
+    </div>
+    <div class="value">
+       {{ percent(obj.value, service.min, service.max) }}%
+    </div>
+    <div class="line_status" [class.redline]="percent(obj.value, service.min, service.max) < 20 "></div>
+    <div class="tower">
+      <div class="value_tower" [style.height.%]="percent(obj.value, service.min, service.max)">
+      </div>
+    </div>
+    <div class="name">
+      Масса карналита 
+    </div>
+    <div class="value">
+        {{ obj.value }}
+    </div>
+    <div class="line_status" [class.redline]="percent(obj.value, service.min, service.max) < 20"></div>
+  </div>
+  
+</div>

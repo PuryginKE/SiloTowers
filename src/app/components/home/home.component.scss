@@ -1,0 +1,65 @@
+.flex-container {
+    display: -webkit-flex;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(45,45,50);
+}
+
+
+
+.item{
+    color: white;
+    width: 250px;
+    height: 450px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.line_status{
+    margin: 0 auto;
+    background-color: rgb(4, 196, 4);
+    width: 80px;
+    height: 7px;
+}
+
+.redline{
+    margin: 0 auto;
+    background-color: rgb(255, 31, 31);
+    width: 80px;
+    height: 7px;
+}
+
+.tower{
+    background-color: rgb(118, 118, 121);
+    width: 220px;
+    height: 300px;
+    margin: 10px auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+.value_tower{
+    background-color: rgb(77, 149, 98);
+    width: 200px;
+    
+    margin: 0 auto;
+}
+
+.value{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    text-align: center;
+}
+.title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+.name{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
